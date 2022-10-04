@@ -15,7 +15,7 @@
     <title>New yard sale</title>
   </head>
   <body>
-    <!-- Barra de navegacion en desktop -->
+    <!-- Barra de navegacion en desktop y mobile-->
     <nav>
       <img src="./assets/icons/icon_menu.svg" alt="menu" class="menu" />
       <div class="navbar-left">
@@ -118,7 +118,8 @@
 
     </nav>
 
-    <aside class="product-detail inactive">
+    <!-- productos a comprar / carrito de compras -->
+    <aside id="shoppingCart" class="inactive">
         <div class="title-container">
             <img src="./assets/icons/flechita.svg " alt="left-arrow">
             <p class="title ">My order</p>
@@ -166,10 +167,32 @@
     </div>
     </aside>
 
+     <!-- detalles del producto (precio, descripcion, imagen grande, opcion de añadir) -->
+     <aside id="product-detail" class="inactive">
+      <div class="product-detail-close">
+        <img src="./assets/icons/icon_close.svg" alt="close" />
+      </div>
+      <img
+        src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="bike"
+      />
+      <div class="product-info">
+        <p>$35,00</p>
+        <p>Bike</p>
+        <p>
+          With its practical position, this bike also fulfills a decorative
+          function, add your hall or workspace.
+        </p>
+        <button class="primary-button add-to-cart-button">
+          <img src="./assets/icons/white-shopping-cart.svg" alt="add to cart" />
+          Add to cart
+        </button>
+    </aside>
+
       <!-- Productos a la venta -->
       <section class="main-container">
         <div class="cards-container">
-          
+          <!-- con js aqui se introduciran todos los productos a la venta -->
         </div>
       </section>
 
